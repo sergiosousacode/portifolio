@@ -154,3 +154,62 @@ header button{
     width: 100%;
     margin-top: 10px;
 }
+/* section sobre */
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.container-sobre {
+    max-width: 1200px;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px; 
+}
+.image-sobre {
+    flex: 0 0 40%; 
+    max-width: 40%; 
+    text-align: center;
+}
+
+.image-sobre img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.detail-sobre {
+    flex: 0 0 55%; 
+    max-width: 55%;
+    padding-right: 10px; 
+    text-transform: 1.5;
+}
+.detail-sobre h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.detail-sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .container-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-sobre,
+        .detail-sobre {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .detail-sobre {
+        padding: 0;
+    }
+}
