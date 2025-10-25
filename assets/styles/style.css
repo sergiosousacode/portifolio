@@ -76,7 +76,7 @@ header button{
 
 .skill-item {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 50px; 
     max-width: 100%;
 }
@@ -118,4 +118,39 @@ header button{
     text-align: center;
     margin-bottom: 30px;
     font-size: 35px;
+}
+.section-experiencia .experiencia{
+    max-width: 100%;
+    margin: 30px 100px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.experiencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 15px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.cabecalho-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+.experiencia h3 {
+    margin: 0; 
+    font-size: 20px;
+}
+
+.experiencia span {
+    font-size: 20px;
+}
+
+.experiencia p {
+    width: 100%;
+    margin-top: 10px;
 }
