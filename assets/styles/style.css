@@ -19,7 +19,7 @@ nav ul li a{
     margin: 0 15px;
     color: #000000;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 header button{
     background-color: #000000;
@@ -45,7 +45,7 @@ header button{
 .principal-home .apresentation-home h1 {
     max-width: 50%;
     line-height: 1.5;
-    font-size: 35px;
+
 }
 .principal-home .apresentation-home p {
     max-width: 50%;
@@ -66,7 +66,6 @@ header button{
 .section-skills h2{
     text-align: center;
     margin: 50px;
-    font-size: 35px;
 }
 .container-skills {
     display: flex;
@@ -96,18 +95,7 @@ header button{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* @media (max-width: 768px) {
-    .skill-item {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-@media (max-width: 480px) {
-    .skill-item {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-} */
 /* section experiencia */
 
 .section-experiencia{
@@ -117,8 +105,8 @@ header button{
 .section-experiencia h2{
     text-align: center;
     margin-bottom: 30px;
-    font-size: 35px;
 }
+
 .section-experiencia .experiencia{
     max-width: 100%;
     margin: 30px 100px;
@@ -140,10 +128,6 @@ header button{
     display: flex;
     align-items: center;
     gap: 10px; 
-}
-.experiencia h3 {
-    margin: 0; 
-    font-size: 20px;
 }
 
 .experiencia span {
@@ -188,31 +172,14 @@ header button{
     text-transform: 1.5;
 }
 .detail-sobre h2 {
-    font-size: 30px;
     margin-bottom: 20px;
 }
 .detail-sobre p {
-    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-/* @media (max-width: 768px) {
-    .container-sobre {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .image-sobre,
-        .detail-sobre {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    
-    .detail-sobre {
-        padding: 0;
-    }
-} */
 /* section projetos */
 .container-projetos {
     display: flex;
@@ -237,7 +204,6 @@ header button{
     max-width: 800px;
     height: auto;
     border-radius: 10px;
-    /* transition: transform 0.3s, box-shadow 0.3s; */
 }
 .projeto-image:hover {
     transform: scale(1.01);
@@ -247,27 +213,36 @@ header button{
   flex-direction: row-reverse;
 }
 
-
-/* @media (max-width: 768px) {
-  .projeto-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .projeto-item:nth-child(even) {
-    flex-direction: column;
-  }
-
-  .projeto-image img {
-    width: 100%;
-    max-width: 350px;
-  }
-} */
-
 /* footer */
 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #000000;
     text-align: center;
     padding: 20px;
 }
-
+footer p{
+    margin: 20px;
+}
+.btn-topo {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-contatos a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #19fc05;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

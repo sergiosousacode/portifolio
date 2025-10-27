@@ -1,0 +1,165 @@
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .principal-home {
+    flex-direction: column;
+    margin: 30px 40px;
+    text-align: center;
+  }
+
+  .principal-home .apresentation-home h1,
+  .principal-home .apresentation-home p {
+    max-width: 100%;
+  }
+
+  .container-skills {
+    flex-direction: column;
+  }
+
+  .skill-item {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .container-sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-sobre,
+  .detail-sobre {
+    max-width: 100%;
+  }
+
+  .projeto-item {
+    flex-direction: column;
+    margin: 30px 40px;
+    text-align: center;
+  }
+
+  .projeto-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .projeto-image img {
+    max-width: 100%;
+  }
+}
+
+/* Smartphones (até 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .principal-home {
+    margin: 20px;
+  }
+
+  .principal-home .image-avatar img {
+    max-width: 180px;
+  }
+
+  .skill-item {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .section-experiencia .experiencia {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .experiencia {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-sobre {
+    padding: 0;
+  }
+
+  .projeto-item {
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .projeto-image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .btn-contatos a {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Smartphones pequenos (até 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .principal-home h1 {
+    font-size: 22px;
+  }
+
+  .principal-home p {
+    font-size: 16px;
+  }
+
+  .skill-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projeto-detail h3 {
+    font-size: 18px;
+  }
+
+  .projeto-detail p {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
