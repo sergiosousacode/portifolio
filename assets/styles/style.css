@@ -96,7 +96,7 @@ header button{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .skill-item {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -107,7 +107,7 @@ header button{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-}
+} */
 /* section experiencia */
 
 .section-experiencia{
@@ -197,7 +197,7 @@ header button{
     margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container-sobre {
         flex-direction: column;
         text-align: center;
@@ -212,4 +212,62 @@ header button{
     .detail-sobre {
         padding: 0;
     }
+} */
+/* section projetos */
+.container-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+    background-color: #d9d9d9;
 }
+.projeto-item{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 30px 100px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 35px;
+    line-height: 1.6;
+}
+.projeto-image img{
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+}
+.projeto-image:hover {
+    transform: scale(1.01);
+    
+}
+.projeto-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+/* @media (max-width: 768px) {
+  .projeto-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projeto-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .projeto-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+} */
+
+/* footer */
+footer{
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
