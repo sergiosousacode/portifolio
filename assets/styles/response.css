@@ -1,8 +1,4 @@
 
-/* ============================= */
-/* RESPONSIVIDADE */
-/* ============================= */
-
 /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
   header {
@@ -50,6 +46,7 @@
   .image-sobre,
   .detail-sobre {
     max-width: 100%;
+    height: auto;
   }
 
   .projeto-item {
@@ -91,7 +88,7 @@
 
   .skill-item {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
   }
 
   .section-experiencia .experiencia {
